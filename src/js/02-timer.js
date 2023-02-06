@@ -1,45 +1,61 @@
-import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
+// import flatpickr from 'flatpickr';
+// import 'flatpickr/dist/flatpickr.min.css';
 
 // 1 січня 1970 00:00
 // знайти кінцеву дату/час і поточну дату/час
 // вирахувати різницю між кінцевою і поточною датою/часом
 
-const timer = document.querySelector('.timer');
-const button = document.querySelector('button[data-start]');
+// const inputDate = document.querySelector('input[type="text"]');
+// const button = document.querySelector('button[data-start]');
 
-const newTimer = new flatpickr(timer);
+// const flatpickr = new Date(inputDate);
 
-button.addEventListener('click', () => {
-  button.disabled = true;
-});
+// button.disabled = false;
 
-const date = Date.now();
-console.log(date);
+setInterval(() => {
+  console.log('ksdjcnskjdncksjcn');
+}, 1000);
 
-function pad(value) {
-  return String(value).padStart(2, '0');
-}
+// button.addEventListener('click', event => {});
 
-function convertMs(ms) {
-  // Number of milliseconds per unit of time
-  const second = 1000;
-  const minute = second * 60;
-  const hour = minute * 60;
-  const day = hour * 24;
+// const options = {
+//   enableTime: true,
+//   time_24hr: true,
+//   defaultDate: new Date(),
+//   minuteIncrement: 1,
+//   onClose(selectedDates) {
+//     console.log(selectedDates[0]);
+//   },
+// };
 
-  // Remaining days
-  const days = Math.floor(ms / day);
-  // Remaining hours
-  const hours = Math.floor((ms % day) / hour);
-  // Remaining minutes
-  const minutes = Math.floor(((ms % day) % hour) / minute);
-  // Remaining seconds
-  const seconds = Math.floor((((ms % day) % hour) % minute) / second);
+// // flatpickr(selector, options);
 
-  return { days, hours, minutes, seconds };
-}
+// const date = Date.now();
+// console.log(date);
 
-console.log(convertMs(3000)); // {days: 0, hours: 0, minutes: 0, seconds: 3}
-console.log(convertMs(140000)); // {days: 0, hours: 0, minutes: 2, seconds: 20}
-console.log(convertMs(24140000)); // {days: 0, hours: 6 minutes: 42, seconds: 20}
+// function pad(value) {
+//   return String(value).padStart(2, '0');
+// }
+
+// function convertMs(ms) {
+//   // Number of milliseconds per unit of time
+//   const second = 1000;
+//   const minute = second * 60;
+//   const hour = minute * 60;
+//   const day = hour * 24;
+
+//   // Remaining days
+//   const days = Math.floor(ms / day);
+//   // Remaining hours
+//   const hours = Math.floor((ms % day) / hour);
+//   // Remaining minutes
+//   const minutes = Math.floor(((ms % day) % hour) / minute);
+//   // Remaining seconds
+//   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
+
+//   return { days, hours, minutes, seconds };
+// }
+
+// console.log(convertMs(3000)); // {days: 0, hours: 0, minutes: 0, seconds: 3}
+// console.log(convertMs(140000)); // {days: 0, hours: 0, minutes: 2, seconds: 20}
+// console.log(convertMs(24140000)); // {days: 0, hours: 6 minutes: 42, seconds: 20}
