@@ -10,6 +10,10 @@ const button = document.querySelector('button[data-start]');
 
 const newTimer = new flatpickr(timer);
 
+button.addEventListener('click', () => {
+  button.disabled = true;
+});
+
 const date = Date.now();
 console.log(date);
 
