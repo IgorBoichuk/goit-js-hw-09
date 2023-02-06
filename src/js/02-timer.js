@@ -5,6 +5,11 @@ import 'flatpickr/dist/flatpickr.min.css';
 // знайти кінцеву дату/час і поточну дату/час
 // вирахувати різницю між кінцевою і поточною датою/часом
 
+const timer = document.querySelector('.timer');
+const button = document.querySelector('button[data-start]');
+
+const newTimer = new flatpickr(timer);
+
 const date = Date.now();
 console.log(date);
 
