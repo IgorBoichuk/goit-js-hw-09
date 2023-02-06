@@ -11,19 +11,6 @@ import 'flatpickr/dist/flatpickr.min.css';
 const inputDate = document.querySelector('input[type="text"]');
 const button = document.querySelector('button[data-start]');
 
-const divStyle = document.querySelector('.timer');
-divStyle.style.display = 'flex';
-
-const itemStyle = document.querySelector('.field');
-// itemStyle.style.display = 'flex';
-// itemStyle.style.flexDirection = 'column';
-
-const valueStyle = document.querySelectorAll('.value');
-valueStyle.style.fontSize = '24px';
-
-const labelStyle = document.querySelector('.label');
-labelStyle.style.fontSize = '14px';
-
 // const dateNow = new Date();
 // console.log(dateNow);
 
