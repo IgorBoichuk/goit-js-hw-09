@@ -17,15 +17,18 @@ img {
   max-width: 100%;
 }
 
-timer {
+.timer {
   display: flex;
-  font-size: 30px;
+  gap: 20px;
 }
-field {
-  /* display: flex; */
-  /* flex-direction: column; */
+.field {
+  display: flex;
+  flex-direction: column;
 }
-value {
+.value {
+  font-size: 45px;
+  font-weight: bold;
 }
-label {
+.label {
+  text-align: center;
 }
