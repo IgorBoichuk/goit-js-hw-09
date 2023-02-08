@@ -41,6 +41,7 @@ function addLeadingZero(value) {
   return value.toString().padStart(2, '0');
 }
 btnStart.addEventListener('click', () => {
+  text.disabled = true;
   let timer = setInterval(() => {
     let countdown = new Date(text.value) - new Date();
     btnStart.disabled = true;
