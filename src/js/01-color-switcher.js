@@ -9,6 +9,7 @@ let timerId = null;
 buttonStop.disabled = true;
 
 buttonStart.addEventListener('click', () => {
+  getRandomHexColor();
   timerId = setInterval(() => {
     bodyColor.style.backgroundColor = getRandomHexColor();
   }, 1000);
